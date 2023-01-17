@@ -73,7 +73,7 @@ func Test_EEMIHandler_Returns_EEMI_Response_For_Unhandled_Error(t *testing.T) {
 	eemi, _ := getErrorFromBody(respRecorder.Result())
 	assert.Equal(t, 500, respRecorder.Code, "Status code from eemi error should be returned")
 	assert.Equal(t, "An internal error has occurred", eemi.Message, "Message template should be applied")
-	assert.Equal(t, "Check the logs and retry the operation. If the issue persists contact Dell support", eemi.ResponseAction, "Config Action template should be applied")
+	assert.Equal(t, "Check the logs and retry the operation. If the issue persists contact Backend support", eemi.ResponseAction, "Config Action template should be applied")
 
 }
 

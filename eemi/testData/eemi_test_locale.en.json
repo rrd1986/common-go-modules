@@ -5,7 +5,7 @@
   },
   "UNHANDLED_action": {
     "description": "Action when error detected but no eemi code set",
-    "other": "Check the logs and retry the operation. If the issue persists contact Dell support"
+    "other": "Check the logs and retry the operation. If the issue persists contact Backend support"
   },
   "NGCI0001_message": {
     "description": "NGCI0001 message",
@@ -13,7 +13,7 @@
   },
   "NGCI0001_action": {
     "description": "NGCI0001 action",
-    "other": "Check the logs and retry the operation. If the issue persists contact Dell support"
+    "other": "Check the logs and retry the operation. If the issue persists contact Ba support"
   },
   "NGCI0002_message": {
     "description": "NGCI0002 message",

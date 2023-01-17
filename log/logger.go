@@ -72,7 +72,7 @@ func (dl *CustomLogger) WithCustomFields(fields map[string]interface{}) LoggerTy
 func NewLogger(app string, version string) LoggerType {
 	tempLogger := logrus.Logger{
 		Out: os.Stdout,
-		Formatter: DellEmcFormatter{&logrus.JSONFormatter{
+		Formatter: CustomFormatter{&logrus.JSONFormatter{
 			TimestampFormat: time.RFC3339Nano,
 		}},
 		Hooks: make(logrus.LevelHooks),

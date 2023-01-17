@@ -18,11 +18,11 @@ func Test_Logging_Middleware(t *testing.T) {
 	buffer := bytes.NewBuffer(buff)
 	templog := logrus.Logger{
 		Out:       buffer,
-		Formatter: log.DellEmcFormatter{&logrus.JSONFormatter{}},
+		Formatter: log.CustomFormatter{&logrus.JSONFormatter{}},
 		Hooks:     make(logrus.LevelHooks),
 		Level:     logrus.DebugLevel,
 	}
-	logger := log.DellEmcLogger{Entry: templog.WithField("app", "app")}
+	logger := log.CustomLogger{Entry: templog.WithField("app", "app")}
 	req, _ := http.NewRequest("GET", "/test", bytes.NewBuffer([]byte("{request:body}")))
 
 	appRouter := setupLoggingMiddleware(t, &logger, successHandler)
