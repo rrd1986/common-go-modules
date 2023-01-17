@@ -1,0 +1,26 @@
+{
+  "UNHANDLED": {
+    "status": 500,
+    "category": "Internal",
+    "severity": "Critical",
+    "message": "UNHANDLED_message",
+    "responseAction": "UNHANDLED_action",
+    "messageId": "NGCITODO"
+  },
+  "NGCI0001": {
+    "status": 404,
+    "category": "Internal",
+    "severity": "Critical",
+    "message": "NGCI0001_message",
+    "responseAction": "NGCI0001_action",
+    "messageId": "NGCI0001"
+  },
+  "NGCI0002": {
+    "status": 512,
+    "category": "Internal",
+    "severity": "Critical",
+    "message": "NGCI0002_message",
+    "responseAction": "NGCI0002_action",
+    "messageId": "NGCI0002"
+  }
+}
